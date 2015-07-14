@@ -1,0 +1,581 @@
+/*
+VDASH THEME FOR VOAT.CO - HTTPS://VOAT.CO/V/VDASH
+DESIGNED BY /U/SEMINORMAL
+*/
+
+@import url( https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic );
+
+body {
+    color: #333;
+    background-color: #eeeeec;
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1.4;
+}
+
+.md h1,
+.md h2 {
+    margin-bottom: 6px;
+}
+
+.md h3,
+.md h4 {
+    margin-bottom: 3px;
+}
+
+.md h1 {
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+.md h2 {
+    font-weight: normal;
+    font-size: 1.6em;
+}
+
+.md h3 {
+    font-weight: normal;
+    font-size: 1.4em;
+}
+
+.md h4 {
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+.md h5,
+.md h6 {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+.md:not(.wiki) {
+    max-width: 60em;
+    color: #00000a;
+}
+
+.md blockquote,
+.help blockquote {
+    margin-left: 5px;
+    padding: 1px 1px 1px 15px;
+    max-width: 60em;
+    border: 1px solid #ccc;
+    border-width: 0 0 0 1px;
+}
+
+.md hr {
+    height: 1px;
+    border: 0 none;
+    background-color: #d2d2d2;
+    color: #ccc;
+}
+
+#container {
+    border: 0 !important;
+    background: transparent;
+    max-width: 100%;
+}
+
+    #container > .content {
+        margin: 0 340px 0 10px;
+    }
+
+#header-container {
+    background-color: #acd9fc;
+    background-image: linear-gradient(#acd9fc, #8ccbfc);
+    border-color: #8ccbfc;
+    padding: 0 10px;
+}
+
+#header-banner {
+    max-width: 100%;
+}
+
+#header-account > div {
+    border: 0;
+}
+
+.tabmenu li.disabled a, .tabmenu li.disabled a:hover, .tabmenu li.selected a {
+    color: #2154a3;
+    border: 0;
+}
+
+.tabmenu li.disabled a.contribute, .btn-whoaverse.contribute {
+    border: 0;
+    background-color: #5ba2fd;
+    background-image: linear-gradient(#5ba2fd, #4b8adb);
+    color: #ffffff;
+}
+
+a,
+.submission a.title {
+    color: #144ddd;
+}
+
+    .submission a.title,
+    .submission a.title.loggedin {
+        color: #144ddd;
+    }
+
+        .submission a.title:visited,
+        .submission a.title.loggedin.click:visited,
+        .submission a.title.loggedin:visited {
+            color: #5e5e5e;
+        }
+
+        a:hover,
+        .submission a.title:hover,
+        .submission a.title.loggedin:hover {
+            color: #353a3e;
+            text-decoration: none;
+        }
+
+/* Links */
+.sitetable {
+    padding: 5px;
+}
+
+    .sitetable .sitetable {
+        padding: 0;
+    }
+
+/* ~~  A.4. Links and Posts ~~~~~ */
+/*--  A.4.1. specials - stickied, promoted and sponsored links  -- */
+.organic-listing {
+    margin: 0 5px;
+}
+
+    .organic-listing .entry:hover {
+        border: 0 !important;
+    }
+
+.organic-listing,
+.submission.link.stickied,
+.submission.link.promoted {
+    overflow: hidden;
+    padding: 0;
+    border-color: #fff;
+    background: none #edf5ff;
+    box-shadow: 0 1px 3px 0 #ccb;
+}
+
+.submission.link.stickied {
+    background: none #fffeed;
+}
+
+    .submission.link.stickied a.title {
+        color: #50722b;
+    }
+
+.listing-page .link:first-child.stickied {
+    margin: 0 0 10px !important;
+    border-width: 1px 0 1px 1px;
+}
+
+/*--  A.4.2. Rest of Links (Posts) -- */
+.linklisting .submission {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #fff;
+    border-width: 1px 0;
+    background-color: #fefefd;
+    box-shadow: 0 1px 3px 0 #cdcdcd;
+}
+
+.linklisting .odd {
+    background-color: #ffffff;
+}
+
+.linklisting .even {
+    background-color: #f4f4f4;
+}
+
+.linklisting .submission .midcol {
+    padding: 8px 0;
+}
+
+.linklisting .submission .entry {
+    padding: 8px 0;
+}
+
+
+/*.sitetable > .submission, .sitetable > .comment {
+    box-shadow: 0 1px 3px 0 #cdcdcd;
+    border: 1px solid #ffffff;
+    border-width: 1px 0;
+    padding: 8px 5px;
+}
+
+.sitetable > .submission {
+    margin-bottom: 4px;
+}
+
+.submission.even {
+    background-color: #f0f0f0;
+}
+.submission.odd {
+    background-color: #ffffff;
+}*/
+
+.entry:hover {
+    padding-right: 2px;
+    outline: 0;
+    border: 0 !important;
+    border-right: 3px solid #4d90fe !important;
+}
+
+    .new-comment .usertext-body .md {
+        outline: none !important;
+        border: 0 !important;
+    }
+
+
+.titlebox h1 {
+    font-size: 26px;
+}
+
+span.pagename {
+    font-size: 20px;
+}
+
+span.pagename a {
+    color: #2154a3;
+}
+
+.promoted {
+    border: 0 none;
+    font-size: 11px;
+    padding: 3px 2px;
+}
+
+.comment {
+    background: #ffffff;
+    padding: 0 5px 5px 0;
+}
+
+.comment a.submitter {
+    color: #8870FF !important;
+}
+
+.comment a.moderator {
+    color: #3FBF4C !important;
+}
+
+
+/* Sidebar */
+.side {
+    z-index: 10;
+    margin: 0 20px;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+    .side .spacer {
+        margin: 5px 0 5px 0;
+        background-color: transparent;
+    }
+
+    .side .md {
+        overflow: visible;
+        max-width: 100%;
+    }
+
+    .side .titlebox {
+        padding: 0;
+    }
+
+    .side h1.whoaversename {
+        margin: 1.2em 0 .2em 0;
+        text-shadow: 0 0 1px #aaa;
+        letter-spacing: -1px;
+        font-size: 26px;
+    }
+
+        .side h1.whoaversename a {
+            color: #222;
+        }
+
+    /* Standard sidebar section */
+    .side .md blockquote {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        margin: 5px 0 10px;
+        max-width: 100%;
+        padding: 5px 10px 10px 5px;
+        position: relative;
+    }
+
+.side h1,
+.side h2,
+.side h3 {
+    margin: 5px;
+    background: none transparent;
+    color: #222;
+    text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff;
+    border: none;
+}
+
+.side h1 {
+    font-size: 19px;
+}
+
+.side h2 {
+    font-size: 16px;
+}
+
+.side h3 {
+    font-size: 14px;
+}
+
+.side .md p {
+    margin: 5px 10px;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.side .md li p,
+.side .md ol p {
+    margin: 0;
+}
+
+.subscribers {
+    display: block;
+    margin: 5px 0;
+}
+
+/*-- Code Style -- */
+.md pre {
+    overflow: auto;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fbf9f4 !important;
+}
+
+    .md pre code {
+        padding: 0;
+        border: 0 none;
+        background: transparent;
+        font-size: .8em;
+    }
+
+.md code {
+    padding: 2px 3px;
+    border: 1px solid #ccc;
+    background-color: #fbf9f4;
+    color: #222;
+    font-size: .8em;
+    font-family: Consolas,Monaco,'Courier New',monospace;
+}
+
+/* -- Moderators Area -- */
+.sidecontentbox {
+    padding: 5px 0 5px;
+    background-color: transparent !important;
+    line-height: 1.3;
+}
+
+    .sidecontentbox a.helplink {
+        font-size: 12px;
+    }
+
+    .sidecontentbox .title h1 {
+        color: #888;
+    }
+
+    .sidecontentbox .content {
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        background-color: #f5f5f5;
+    }
+
+        .sidecontentbox .content .flair,
+        .sidecontentbox .content .linkflairlabel {
+            margin: 0 5px;
+        }
+
+/* -- Sidebar Boxes -- */
+.side .md blockquote {
+    position: relative;
+    margin: 5px 0 10px;
+    padding: 5px 10px 10px 5px;
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #f5f5f5;
+}
+
+    .side .md blockquote > h1,
+    .side .md blockquote > h2,
+    .side .md blockquote > h3 {
+        font-size: 20px;
+    }
+
+    .side .md blockquote > blockquote {
+        margin: 5px 0 0 5px;
+    }
+
+    .side .md blockquote table {
+        margin: 5px -11px 5px -6px;
+        min-width: 299px;
+        max-width: 300px;
+    }
+
+        .side .md blockquote table:last-child {
+            margin-bottom: -11px;
+        }
+
+    .side .md blockquote + hr,
+    .side .md blockquote + h3,
+    .side .md blockquote + h4,
+    .side .md blockquote + h5,
+    .side .md blockquote + h6 {
+        margin: 0 0 5px 0;
+        width: 0;
+        height: 1px;
+    }
+
+    .side .md blockquote h1 ~ p {
+        margin-left: 10px;
+    }
+
+.side .md h3 + blockquote p,
+.side .md h4 + blockquote p,
+.side .md h5 + blockquote p,
+.side .md h6 + blockquote p {
+    margin: 2px 10px;
+    color: #1d1212;
+}
+
+.side .md blockquote + p,
+.side .md p + blockquote,
+.side .md p + h3,
+.side .md p + h4,
+.side .md p + h5,
+.side .md p + h6 {
+    margin-top: 12px;
+}
+
+.side .md > hr {
+    width: 0;
+}
+
+    .side .md > hr + hr {
+        margin: 5px 0 15px;
+        width: auto;
+    }
+
+/*--  Colored Boxes -- */
+/*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
+.side .md blockquote a[href*='#icon-']:before {
+    border-radius: 3px;
+    background-color: #555;
+    background-image: linear-gradient(#555,#4d4d4d);
+    color: #eee;
+    text-shadow: none;
+}
+
+/*Blue*/
+.side .md h3 + blockquote {
+    border-color: #aacdf1;
+    background-color: #d4ecfe;
+}
+
+    .side .md h3 + blockquote a[href*='#icon-']:before,
+    .side .md blockquote a[href$='blue']:before {
+        background-color: #50a3fd;
+        background-image: linear-gradient(#50a3fd,#1c89d1);
+        color: #d4ecfe;
+    }
+
+    .side .md h3 + blockquote hr {
+        background-color: #aacdf1;
+        color: #aacdf1;
+    }
+
+    .side .md h3 + blockquote * {
+        border-color: #aacdf1;
+    }
+
+/*Green*/
+.side .md h4 + blockquote {
+    border-color: #45e745;
+    background-color: #e9ffe6;
+}
+
+    .side .md h4 + blockquote a[href*='#icon-']:before,
+    .side .md blockquote a[href$='green']:before {
+        background-color: #39c739;
+        background-image: linear-gradient(#6de46d,#39c739);
+        color: #e9ffe6;
+    }
+
+    .side .md h4 + blockquote hr {
+        background-color: #45e745;
+        color: #45e745;
+    }
+
+    .side .md h4 + blockquote * {
+        border-color: #45e745;
+    }
+
+/*Yellow*/
+.side .md h5 + blockquote {
+    border-color: #fae296;
+    background-color: #fffde6;
+}
+
+    .side .md h5 + blockquote a[href*='#icon-']:before,
+    .side .md blockquote a[href$='yellow']:before {
+        background-color: #ffce36;
+        background-image: linear-gradient(#fde000,#ffce36);
+        color: #ffffe6;
+    }
+
+    .side .md h5 + blockquote hr {
+        background-color: #fae296;
+        color: #fae296;
+    }
+
+    .side .md h5 + blockquote * {
+        border-color: #fae296;
+    }
+
+/*Red*/
+.side .md h6 + blockquote {
+    border-color: #ff9185;
+    background-color: #fef0f0;
+}
+
+    .side .md h6 + blockquote a[href*='#icon-']:before,
+    .side .md blockquote a[href$='red']:before {
+        background-color: #dd4814;
+        background-image: linear-gradient(#ef784e,#dd4814);
+        color: #fef0f0;
+    }
+
+    .side .md h6 + blockquote hr {
+        background-color: #ff9185;
+        color: #ff9185;
+    }
+
+    .side .md h6 + blockquote * {
+        border-color: #ff9185;
+    }
+
+    .side .md h6 + blockquote table,
+    .side .md h6 + blockquote table thead,
+    .side .md h6 + blockquote table td,
+    .side .md h6 + blockquote table th {
+        /* replace * and use the above selector set for selective border colors in all boxes based on h3,4,5,6 */
+    }
+
+
+/* REMOVE CHAT */
+.spacersection {
+    display: none;
+}
