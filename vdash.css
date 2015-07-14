@@ -78,14 +78,22 @@ body {
     max-width: 100%;
 }
 
-    #container > .content {
-        margin: 0 340px 0 10px;
-    }
+@media (min-width: 871px) {
+        #container > .content {
+            margin: 0 340px 0 10px;
+        }
+}
+/* -- Header -- */
+#header {
+    
+}
 
 #header-container {
-    background-color: #acd9fc;
-    background-image: linear-gradient(#acd9fc, #8ccbfc);
-    border-color: #8ccbfc;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #aacdf1;
+    border-width: 0;
     padding: 0 10px;
 }
 
@@ -97,18 +105,61 @@ body {
     border: 0;
 }
 
-.tabmenu li.disabled a, .tabmenu li.disabled a:hover, .tabmenu li.selected a {
-    color: #2154a3;
-    border: 0;
+@media (min-width: 871px) {
+    .tabmenu {
+        line-height: 57px;
+    }
+    .tabmenu li a {
+        padding: 10px 28px;
+    }
+    .tabmenu li.selected a, .tabmenu li.disabled a {
+        padding: 10px 28px;
+        border: 0;
+        border-radius: 3px;
+        background: transparent;
+        color: white;
+    }
+    .tabmenu li.selected a {
+        background: #fff;
+        color: #4aabe7;
+        font-weight: bold;
+    }
+    .tabmenu li.disabled a.contribute, .btn-whoaverse.contribute {
+        margin: 1px 5px 2px 0;
+        padding: 6px 10px !important;
+        min-width: 70px;
+        height: auto !important;
+        border: 1px solid #357ae8 !important;
+        border-radius: 2px;
+        background-color: #5ba2fd !important;
+        background-image: linear-gradient(#5ba2fd,#4b8adb) !important;
+        color: #fff;
+        text-decoration: none;
+        text-shadow: 1px 1px 2px #2154a3;
+        font-weight: bold;
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .tabmenu li.disabled a.contribute:hover, .btn-whoaverse.contribute:hover {
+        border-color: #08c;
+        background-color: #357ae8;
+        background-image: linear-gradient(#4d90fe,#357ae8) !important;
+        color: #fff;
+    }
+    .tabmenu li.selected a:hover, .tabmenu li.disabled a:hover {
+        border: 0;
+        border-radius: 3px;
+        background: #fff;
+        color: #444;
+    }
+    .tabmenu li.selected a.contribute, .tabmenu li.selected a.contribute:hover {
+        padding: 10px 19px 12px;
+        font-weight: normal;
+    }
 }
 
-.tabmenu li.disabled a.contribute, .btn-whoaverse.contribute {
-    border: 0;
-    background-color: #5ba2fd;
-    background-image: linear-gradient(#5ba2fd, #4b8adb);
-    color: #ffffff;
-}
 
+/* -- Links -- */
 a,
 .submission a.title {
     color: #144ddd;
@@ -132,7 +183,6 @@ a,
             text-decoration: none;
         }
 
-/* Links */
 .sitetable {
     padding: 5px;
 }
@@ -265,315 +315,316 @@ span.pagename a {
 }
 
 
-/* Sidebar */
-.side {
-    z-index: 10;
-    margin: 0 20px;
-    padding: 0 10px;
-    background-color: transparent;
-}
-
-    .side .spacer {
-        margin: 5px 0 5px 0;
+@media (min-width: 871px) {
+    /* Sidebar */
+    .side {
+        z-index: 10;
+        margin: 0 20px;
+        padding: 0 10px;
         background-color: transparent;
     }
 
-    .side .md {
-        overflow: visible;
-        max-width: 100%;
-    }
-
-    .side .titlebox {
-        padding: 0;
-    }
-
-    .side h1.whoaversename {
-        margin: 1.2em 0 .2em 0;
-        text-shadow: 0 0 1px #aaa;
-        letter-spacing: -1px;
-        font-size: 26px;
-    }
-
-        .side h1.whoaversename a {
-            color: #222;
+        .side .spacer {
+            margin: 5px 0 5px 0;
+            background-color: transparent;
         }
 
-    /* Standard sidebar section */
+        .side .md {
+            overflow: visible;
+            max-width: 100%;
+        }
+
+        .side .titlebox {
+            padding: 0;
+        }
+
+        .side h1.whoaversename {
+            margin: 1.2em 0 .2em 0;
+            text-shadow: 0 0 1px #aaa;
+            letter-spacing: -1px;
+            font-size: 26px;
+        }
+
+            .side h1.whoaversename a {
+                color: #222;
+            }
+
+        /* Standard sidebar section */
+        .side .md blockquote {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            margin: 5px 0 10px;
+            max-width: 100%;
+            padding: 5px 10px 10px 5px;
+            position: relative;
+        }
+
+    .side h1,
+    .side h2,
+    .side h3 {
+        margin: 5px;
+        background: none transparent;
+        color: #222;
+        text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff;
+        border: none;
+    }
+
+    .side h1 {
+        font-size: 19px;
+    }
+
+    .side h2 {
+        font-size: 16px;
+    }
+
+    .side h3 {
+        font-size: 14px;
+    }
+
+    .side .md p {
+        margin: 5px 10px;
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .side .md li p,
+    .side .md ol p {
+        margin: 0;
+    }
+
+    .subscribers {
+        display: block;
+        margin: 5px 0;
+    }
+
+    /*-- Code Style -- */
+    .md pre {
+        overflow: auto;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #fbf9f4 !important;
+    }
+
+        .md pre code {
+            padding: 0;
+            border: 0 none;
+            background: transparent;
+            font-size: .8em;
+        }
+
+    .md code {
+        padding: 2px 3px;
+        border: 1px solid #ccc;
+        background-color: #fbf9f4;
+        color: #222;
+        font-size: .8em;
+        font-family: Consolas,Monaco,'Courier New',monospace;
+    }
+
+    /* -- Moderators Area -- */
+    .sidecontentbox {
+        padding: 5px 0 5px;
+        background-color: transparent !important;
+        line-height: 1.3;
+    }
+
+        .sidecontentbox a.helplink {
+            font-size: 12px;
+        }
+
+        .sidecontentbox .title h1 {
+            color: #888;
+        }
+
+        .sidecontentbox .content {
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+        }
+
+            .sidecontentbox .content .flair,
+            .sidecontentbox .content .linkflairlabel {
+                margin: 0 5px;
+            }
+
+    /* -- Sidebar Boxes -- */
     .side .md blockquote {
-        background-color: #f5f5f5;
+        position: relative;
+        margin: 5px 0 10px;
+        padding: 5px 10px 10px 5px;
+        max-width: 100%;
         border: 1px solid #ccc;
         border-radius: 2px;
-        margin: 5px 0 10px;
-        max-width: 100%;
-        padding: 5px 10px 10px 5px;
-        position: relative;
-    }
-
-.side h1,
-.side h2,
-.side h3 {
-    margin: 5px;
-    background: none transparent;
-    color: #222;
-    text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff;
-    border: none;
-}
-
-.side h1 {
-    font-size: 19px;
-}
-
-.side h2 {
-    font-size: 16px;
-}
-
-.side h3 {
-    font-size: 14px;
-}
-
-.side .md p {
-    margin: 5px 10px;
-    font-size: 13px;
-    line-height: 1.4;
-}
-
-.side .md li p,
-.side .md ol p {
-    margin: 0;
-}
-
-.subscribers {
-    display: block;
-    margin: 5px 0;
-}
-
-/*-- Code Style -- */
-.md pre {
-    overflow: auto;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    background: #fbf9f4 !important;
-}
-
-    .md pre code {
-        padding: 0;
-        border: 0 none;
-        background: transparent;
-        font-size: .8em;
-    }
-
-.md code {
-    padding: 2px 3px;
-    border: 1px solid #ccc;
-    background-color: #fbf9f4;
-    color: #222;
-    font-size: .8em;
-    font-family: Consolas,Monaco,'Courier New',monospace;
-}
-
-/* -- Moderators Area -- */
-.sidecontentbox {
-    padding: 5px 0 5px;
-    background-color: transparent !important;
-    line-height: 1.3;
-}
-
-    .sidecontentbox a.helplink {
-        font-size: 12px;
-    }
-
-    .sidecontentbox .title h1 {
-        color: #888;
-    }
-
-    .sidecontentbox .content {
-        padding: 5px 10px;
-        border: 1px solid #ccc;
         background-color: #f5f5f5;
     }
 
-        .sidecontentbox .content .flair,
-        .sidecontentbox .content .linkflairlabel {
-            margin: 0 5px;
+        .side .md blockquote > h1,
+        .side .md blockquote > h2,
+        .side .md blockquote > h3 {
+            font-size: 20px;
         }
 
-/* -- Sidebar Boxes -- */
-.side .md blockquote {
-    position: relative;
-    margin: 5px 0 10px;
-    padding: 5px 10px 10px 5px;
-    max-width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    background-color: #f5f5f5;
-}
-
-    .side .md blockquote > h1,
-    .side .md blockquote > h2,
-    .side .md blockquote > h3 {
-        font-size: 20px;
-    }
-
-    .side .md blockquote > blockquote {
-        margin: 5px 0 0 5px;
-    }
-
-    .side .md blockquote table {
-        margin: 5px -11px 5px -6px;
-        min-width: 299px;
-        max-width: 300px;
-    }
-
-        .side .md blockquote table:last-child {
-            margin-bottom: -11px;
+        .side .md blockquote > blockquote {
+            margin: 5px 0 0 5px;
         }
 
-    .side .md blockquote + hr,
-    .side .md blockquote + h3,
-    .side .md blockquote + h4,
-    .side .md blockquote + h5,
-    .side .md blockquote + h6 {
-        margin: 0 0 5px 0;
+        .side .md blockquote table {
+            margin: 5px -11px 5px -6px;
+            min-width: 299px;
+            max-width: 300px;
+        }
+
+            .side .md blockquote table:last-child {
+                margin-bottom: -11px;
+            }
+
+        .side .md blockquote + hr,
+        .side .md blockquote + h3,
+        .side .md blockquote + h4,
+        .side .md blockquote + h5,
+        .side .md blockquote + h6 {
+            margin: 0 0 5px 0;
+            width: 0;
+            height: 1px;
+        }
+
+        .side .md blockquote h1 ~ p {
+            margin-left: 10px;
+        }
+
+    .side .md h3 + blockquote p,
+    .side .md h4 + blockquote p,
+    .side .md h5 + blockquote p,
+    .side .md h6 + blockquote p {
+        margin: 2px 10px;
+        color: #1d1212;
+    }
+
+    .side .md blockquote + p,
+    .side .md p + blockquote,
+    .side .md p + h3,
+    .side .md p + h4,
+    .side .md p + h5,
+    .side .md p + h6 {
+        margin-top: 12px;
+    }
+
+    .side .md > hr {
         width: 0;
-        height: 1px;
     }
 
-    .side .md blockquote h1 ~ p {
-        margin-left: 10px;
+        .side .md > hr + hr {
+            margin: 5px 0 15px;
+            width: auto;
+        }
+
+    /*--  Colored Boxes -- */
+    /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
+    .side .md blockquote a[href*='#icon-']:before {
+        border-radius: 3px;
+        background-color: #555;
+        background-image: linear-gradient(#555,#4d4d4d);
+        color: #eee;
+        text-shadow: none;
     }
 
-.side .md h3 + blockquote p,
-.side .md h4 + blockquote p,
-.side .md h5 + blockquote p,
-.side .md h6 + blockquote p {
-    margin: 2px 10px;
-    color: #1d1212;
-}
-
-.side .md blockquote + p,
-.side .md p + blockquote,
-.side .md p + h3,
-.side .md p + h4,
-.side .md p + h5,
-.side .md p + h6 {
-    margin-top: 12px;
-}
-
-.side .md > hr {
-    width: 0;
-}
-
-    .side .md > hr + hr {
-        margin: 5px 0 15px;
-        width: auto;
-    }
-
-/*--  Colored Boxes -- */
-/*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
-.side .md blockquote a[href*='#icon-']:before {
-    border-radius: 3px;
-    background-color: #555;
-    background-image: linear-gradient(#555,#4d4d4d);
-    color: #eee;
-    text-shadow: none;
-}
-
-/*Blue*/
-.side .md h3 + blockquote {
-    border-color: #aacdf1;
-    background-color: #d4ecfe;
-}
-
-    .side .md h3 + blockquote a[href*='#icon-']:before,
-    .side .md blockquote a[href$='blue']:before {
-        background-color: #50a3fd;
-        background-image: linear-gradient(#50a3fd,#1c89d1);
-        color: #d4ecfe;
-    }
-
-    .side .md h3 + blockquote hr {
-        background-color: #aacdf1;
-        color: #aacdf1;
-    }
-
-    .side .md h3 + blockquote * {
+    /*Blue*/
+    .side .md h3 + blockquote {
         border-color: #aacdf1;
+        background-color: #d4ecfe;
     }
 
-/*Green*/
-.side .md h4 + blockquote {
-    border-color: #45e745;
-    background-color: #e9ffe6;
-}
+        .side .md h3 + blockquote a[href*='#icon-']:before,
+        .side .md blockquote a[href$='blue']:before {
+            background-color: #50a3fd;
+            background-image: linear-gradient(#50a3fd,#1c89d1);
+            color: #d4ecfe;
+        }
 
-    .side .md h4 + blockquote a[href*='#icon-']:before,
-    .side .md blockquote a[href$='green']:before {
-        background-color: #39c739;
-        background-image: linear-gradient(#6de46d,#39c739);
-        color: #e9ffe6;
-    }
+        .side .md h3 + blockquote hr {
+            background-color: #aacdf1;
+            color: #aacdf1;
+        }
 
-    .side .md h4 + blockquote hr {
-        background-color: #45e745;
-        color: #45e745;
-    }
+        .side .md h3 + blockquote * {
+            border-color: #aacdf1;
+        }
 
-    .side .md h4 + blockquote * {
+    /*Green*/
+    .side .md h4 + blockquote {
         border-color: #45e745;
+        background-color: #e9ffe6;
     }
 
-/*Yellow*/
-.side .md h5 + blockquote {
-    border-color: #fae296;
-    background-color: #fffde6;
-}
+        .side .md h4 + blockquote a[href*='#icon-']:before,
+        .side .md blockquote a[href$='green']:before {
+            background-color: #39c739;
+            background-image: linear-gradient(#6de46d,#39c739);
+            color: #e9ffe6;
+        }
 
-    .side .md h5 + blockquote a[href*='#icon-']:before,
-    .side .md blockquote a[href$='yellow']:before {
-        background-color: #ffce36;
-        background-image: linear-gradient(#fde000,#ffce36);
-        color: #ffffe6;
-    }
+        .side .md h4 + blockquote hr {
+            background-color: #45e745;
+            color: #45e745;
+        }
 
-    .side .md h5 + blockquote hr {
-        background-color: #fae296;
-        color: #fae296;
-    }
+        .side .md h4 + blockquote * {
+            border-color: #45e745;
+        }
 
-    .side .md h5 + blockquote * {
+    /*Yellow*/
+    .side .md h5 + blockquote {
         border-color: #fae296;
+        background-color: #fffde6;
     }
 
-/*Red*/
-.side .md h6 + blockquote {
-    border-color: #ff9185;
-    background-color: #fef0f0;
-}
+        .side .md h5 + blockquote a[href*='#icon-']:before,
+        .side .md blockquote a[href$='yellow']:before {
+            background-color: #ffce36;
+            background-image: linear-gradient(#fde000,#ffce36);
+            color: #ffffe6;
+        }
 
-    .side .md h6 + blockquote a[href*='#icon-']:before,
-    .side .md blockquote a[href$='red']:before {
-        background-color: #dd4814;
-        background-image: linear-gradient(#ef784e,#dd4814);
-        color: #fef0f0;
-    }
+        .side .md h5 + blockquote hr {
+            background-color: #fae296;
+            color: #fae296;
+        }
 
-    .side .md h6 + blockquote hr {
-        background-color: #ff9185;
-        color: #ff9185;
-    }
+        .side .md h5 + blockquote * {
+            border-color: #fae296;
+        }
 
-    .side .md h6 + blockquote * {
+    /*Red*/
+    .side .md h6 + blockquote {
         border-color: #ff9185;
+        background-color: #fef0f0;
     }
 
-    .side .md h6 + blockquote table,
-    .side .md h6 + blockquote table thead,
-    .side .md h6 + blockquote table td,
-    .side .md h6 + blockquote table th {
-        /* replace * and use the above selector set for selective border colors in all boxes based on h3,4,5,6 */
-    }
+        .side .md h6 + blockquote a[href*='#icon-']:before,
+        .side .md blockquote a[href$='red']:before {
+            background-color: #dd4814;
+            background-image: linear-gradient(#ef784e,#dd4814);
+            color: #fef0f0;
+        }
 
+        .side .md h6 + blockquote hr {
+            background-color: #ff9185;
+            color: #ff9185;
+        }
+
+        .side .md h6 + blockquote * {
+            border-color: #ff9185;
+        }
+
+        .side .md h6 + blockquote table,
+        .side .md h6 + blockquote table thead,
+        .side .md h6 + blockquote table td,
+        .side .md h6 + blockquote table th {
+            /* replace * and use the above selector set for selective border colors in all boxes based on h3,4,5,6 */
+        }
+}
 
 /* REMOVE CHAT */
 .spacersection {
