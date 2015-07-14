@@ -220,7 +220,7 @@ a,
     background-color: #ffffff;
 }*/
 
-.entry:hover {
+.submission .entry:hover {
     padding-right: 2px;
     outline: 0;
     border: 0 !important;
