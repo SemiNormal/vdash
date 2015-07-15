@@ -212,7 +212,8 @@ a,
 }
 
 .submission.link.stickied {
-    background: none #fffeed;
+    background: none #FFFDE6;
+    margin-bottom: 15px;
 }
 
     .submission.link.stickied a.title {
