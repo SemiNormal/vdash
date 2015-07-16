@@ -15,6 +15,10 @@ body {
     line-height: 1.4;
 }
 
+body.dark {
+    background-color: #333;
+}
+
 .md h1,
 .md h2 {
     margin-bottom: 6px;
@@ -79,22 +83,28 @@ body {
 }
 
 @media (min-width: 871px) {
-        #container > .content {
-            margin: 0 340px 0 10px;
-        }
+    #container > .content {
+        margin: 0 340px 0 10px;
+    }
 }
 /* -- Header -- */
 #header {
-    
 }
 
 #header-container {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-color: #aacdf1;
     border-width: 0;
     padding: 0 10px;
+}
+
+.light #header-container {
+    background-color: #aacdf1;
+}
+
+.dark #header-container {
+    background-color: #888;
 }
 
 #header-banner {
@@ -109,22 +119,26 @@ body {
     .tabmenu {
         line-height: 57px;
     }
-    .tabmenu li a {
-        padding: 10px 28px;
-    }
-    .tabmenu li.selected a, .tabmenu li.disabled a {
-        padding: 10px 28px;
-        border: 0;
-        border-radius: 3px;
-        background: transparent;
-        color: white;
-    }
-    .tabmenu li.selected a {
-        background: #fff;
-        color: #4aabe7;
-        font-weight: bold;
-    }
-    .tabmenu li.disabled a.contribute, .btn-whoaverse.contribute {
+
+        .tabmenu li a {
+            padding: 10px 28px;
+        }
+
+        .tabmenu li.selected a, .tabmenu li.disabled a {
+            padding: 10px 28px;
+            border: 0;
+            border-radius: 3px;
+            background: transparent;
+            color: white;
+        }
+
+        .tabmenu li.selected a {
+            background: #fff;
+            color: #4aabe7;
+            font-weight: bold;
+        }
+
+    .light .tabmenu li.disabled a.contribute, .light .btn-whoaverse.contribute {
         margin: 1px 5px 2px 0;
         padding: 6px 10px !important;
         min-width: 70px;
@@ -140,18 +154,21 @@ body {
         font-size: 13px;
         cursor: pointer;
     }
-    .tabmenu li.disabled a.contribute:hover, .btn-whoaverse.contribute:hover {
-        border-color: #08c;
-        background-color: #357ae8;
-        background-image: linear-gradient(#4d90fe,#357ae8) !important;
-        color: #fff;
-    }
+
+        .light .tabmenu li.disabled a.contribute:hover, .light .btn-whoaverse.contribute:hover {
+            border-color: #08c;
+            background-color: #357ae8;
+            background-image: linear-gradient(#4d90fe,#357ae8) !important;
+            color: #fff;
+        }
+
     .tabmenu li.selected a:hover, .tabmenu li.disabled a:hover {
         border: 0;
         border-radius: 3px;
         background: #fff;
         color: #444;
     }
+
     .tabmenu li.selected a.contribute, .tabmenu li.selected a.contribute:hover {
         padding: 10px 19px 12px;
         font-weight: normal;
@@ -191,8 +208,8 @@ a,
         padding: 0;
     }
 
-/* ~~  A.4. Links and Posts ~~~~~ */
-/*--  A.4.1. specials - stickied, promoted and sponsored links  -- */
+/* ~~ A.4. Links and Posts ~~~~~ */
+/*-- A.4.1. specials - stickied, promoted and sponsored links -- */
 .organic-listing {
     margin: 0 5px;
 }
@@ -211,22 +228,27 @@ a,
     box-shadow: 0 1px 3px 0 #ccb;
 }
 
+.dark .submission.link.stickied {
+    background-color: #555;
+    box-shadow: none;
+}
+
 .submission.link.stickied {
     background: none #FFFDE6;
     margin-bottom: 15px;
 }
 
-    .submission.link.stickied a.title {
-        color: #50722b;
-    }
+.light .submission.link.stickied a.title {
+    color: #50722b;
+}
 
 .listing-page .link:first-child.stickied {
     margin: 0 0 10px !important;
     border-width: 1px 0 1px 1px;
 }
 
-/*--  A.4.2. Rest of Links (Posts) -- */
-.linklisting .submission {
+/*-- A.4.2. Rest of Links (Posts) -- */
+.light .linklisting .submission {
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -236,11 +258,11 @@ a,
     box-shadow: 0 1px 3px 0 #cdcdcd;
 }
 
-.linklisting .odd {
+.light .linklisting .odd {
     background-color: #ffffff;
 }
 
-.linklisting .even {
+.light .linklisting .even {
     background-color: #f4f4f4;
 }
 
@@ -254,21 +276,21 @@ a,
 
 
 /*.sitetable > .submission, .sitetable > .comment {
-    box-shadow: 0 1px 3px 0 #cdcdcd;
-    border: 1px solid #ffffff;
-    border-width: 1px 0;
-    padding: 8px 5px;
+box-shadow: 0 1px 3px 0 #cdcdcd;
+border: 1px solid #ffffff;
+border-width: 1px 0;
+padding: 8px 5px;
 }
 
 .sitetable > .submission {
-    margin-bottom: 4px;
+margin-bottom: 4px;
 }
 
 .submission.even {
-    background-color: #f0f0f0;
+background-color: #f0f0f0;
 }
 .submission.odd {
-    background-color: #ffffff;
+background-color: #ffffff;
 }*/
 
 .submission .entry:hover {
@@ -278,10 +300,10 @@ a,
     border-right: 3px solid #4d90fe !important;
 }
 
-    .new-comment .usertext-body .md {
-        outline: none !important;
-        border: 0 !important;
-    }
+.new-comment .usertext-body .md {
+    outline: none !important;
+    border: 0 !important;
+}
 
 
 .titlebox h1 {
@@ -292,7 +314,7 @@ span.pagename {
     font-size: 20px;
 }
 
-span.pagename a {
+.light span.pagename a {
     color: #2154a3;
 }
 
@@ -303,17 +325,19 @@ span.pagename a {
 }
 
 .comment {
-    background: #ffffff;
     padding: 0 5px 5px 0;
 }
-
-.comment a.submitter {
-    color: #8870FF !important;
+.light .comment {
+    background: #ffffff;
 }
 
-.comment a.moderator {
-    color: #3FBF4C !important;
-}
+    .comment a.submitter {
+        color: #8870FF !important;
+    }
+
+    .comment a.moderator {
+        color: #3FBF4C !important;
+    }
 
 
 @media (min-width: 871px) {
@@ -346,20 +370,24 @@ span.pagename a {
             font-size: 26px;
         }
 
-            .side h1.whoaversename a {
-                color: #222;
-            }
+    .light .side h1.whoaversename a {
+        color: #222;
+    }
 
-        /* Standard sidebar section */
-        .side .md blockquote {
-            background-color: #f5f5f5;
-            border: 1px solid #ccc;
-            border-radius: 2px;
-            margin: 5px 0 10px;
-            max-width: 100%;
-            padding: 5px 10px 10px 5px;
-            position: relative;
-        }
+    .dark .side h1.whoaversename a {
+        color: #ccc;
+    }
+
+    /* Standard sidebar section */
+    .side .md blockquote {
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        margin: 5px 0 10px;
+        max-width: 100%;
+        padding: 5px 10px 10px 5px;
+        position: relative;
+    }
 
     .side h1,
     .side h2,
@@ -369,6 +397,11 @@ span.pagename a {
         color: #222;
         text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff;
         border: none;
+    }
+    .dark .side h1,
+    .dark .side h2,
+    .dark .side h3 {
+        text-shadow: none;
     }
 
     .side h1 {
@@ -439,7 +472,7 @@ span.pagename a {
             color: #888;
         }
 
-        .sidecontentbox .content {
+        .light .sidecontentbox .content {
             padding: 5px 10px;
             border: 1px solid #ccc;
             background-color: #f5f5f5;
@@ -521,7 +554,7 @@ span.pagename a {
             width: auto;
         }
 
-    /*--  Colored Boxes -- */
+    /*-- Colored Boxes -- */
     /*tip :h3 Blue h4 Green, h5 yellow, h6 red*/
     .side .md blockquote a[href*='#icon-']:before {
         border-radius: 3px;
