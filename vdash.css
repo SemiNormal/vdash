@@ -6,7 +6,6 @@ DESIGNED BY /U/SEMINORMAL
 @import url( https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic );
 
 body {
-    color: #333;
     background-color: #eeeeec;
     font-family: 'Roboto',Helvetica,Arial,sans-serif;
     font-weight: normal;
@@ -15,8 +14,12 @@ body {
     line-height: 1.4;
 }
 
+body.light {
+    color: #333;
+}
+
 body.dark {
-    background-color: #333;
+    background-color: #2B303B;
 }
 
 .md h1,
@@ -104,7 +107,7 @@ body.dark {
 }
 
 .dark #header-container {
-    background-color: #888;
+    background-color: #343D46;
 }
 
 #header-banner {
@@ -229,7 +232,7 @@ a,
 }
 
 .dark .linklisting .submission.link.stickied {
-    background-color: #555;
+    background-color: #47515C;
     box-shadow: none;
 }
 
@@ -264,6 +267,10 @@ a,
 
 .light .linklisting .even {
     background-color: #f4f4f4;
+}
+
+.dark .linklisting .even {
+    background-color: #2D333D;
 }
 
 .linklisting .submission .midcol {
