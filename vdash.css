@@ -228,12 +228,12 @@ a,
     box-shadow: 0 1px 3px 0 #ccb;
 }
 
-.dark .submission.link.stickied {
+.dark .linklisting .submission.link.stickied {
     background-color: #555;
     box-shadow: none;
 }
 
-.submission.link.stickied {
+.linklisting .submission.link.stickied {
     background: none #FFFDE6;
     margin-bottom: 15px;
 }
